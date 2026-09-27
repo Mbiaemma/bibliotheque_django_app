@@ -1,0 +1,6 @@
+<h1>Genre : {{ genre_nom }} ({{ nombre_livres }} livre{{ nombre_livres|pluralize }})</h1>
+<ul>
+{% for livre in livre_list %}
+  <li>{{ livre.titre }}</li>
+{% endfor %}
+</ul>

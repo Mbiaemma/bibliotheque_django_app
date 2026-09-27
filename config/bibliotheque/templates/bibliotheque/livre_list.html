@@ -1,0 +1,7 @@
+<ul>
+{% for livre in object_list %}
+  <li>
+    <a href="{% url 'detail-livre' livre.isbn %}">{{ livre.titre }}</a>
+  </li>
+{% endfor %}
+</ul>
