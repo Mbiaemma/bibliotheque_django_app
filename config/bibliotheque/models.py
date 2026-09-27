@@ -69,8 +69,7 @@ class Emprunt(models.Model):
     date_retour_effective = models.DateField(blank=True, null=True)
 
     def __str__(self):
-        etat = "rendu" if self.date_retour_effective else "en cours"
-        return f"{self.livre} → {self.emprunteur.nom} ({etat})"
+        return f"{self.livre} → {self.emprunteur.nom}"
 
 """ Nous ne mettons pas ces champs directement dans auteur car
 biographie peut faire plusieurs paragraphes de texte et est donc 
