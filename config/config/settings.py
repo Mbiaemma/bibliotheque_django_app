@@ -51,6 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'bibliotheque.middleware.chrono_middleware',
     'bibliotheque.middleware.journalisation_middleware',
+    'bibliotheque.middleware.autorisation_middleware',
 
 ]
 
